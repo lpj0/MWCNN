@@ -10,6 +10,7 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
 </p>
 
 ## Results
+
 ### Image denoising
 <p align="center">
     <img src="./images/GD_RESL.png" width="100%">
@@ -19,6 +20,7 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
     <img src="./images/GD_pic.png" width="100%">
     <br />    <small>  </small>
 </p>
+
 ### SISR
 <p align="center">
     <img src="./images/SISR_RESL.png" width="100%">
@@ -28,6 +30,7 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
     <img src="./images/SISR_pic.png" width="100%">
     <br />    <small>  </small>
 </p>
+
 ### JPEG Artifacts Removal
 <p align="center">
     <img src="./images/JAR_RESL.png" width="100%">
