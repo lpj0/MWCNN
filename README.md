@@ -42,6 +42,10 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
 </p>
 
 ## MWCNN models
+
+Download the pre-trained model with the following url and put it into ./models
+- [BaiduNetDisk](https://pan.baidu.com/s/1ZAgZ7FQvSmTp3U_ypFUG3A) password：pz0h
+
 ### Image denoising
 'Demo_Image_Denoising.m' is the demo of MWCNN for image denoising.
 
@@ -50,8 +54,6 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
 
 ### JPEG Image Artifacts Removal
 'Demo_JPEG_Image_ Artifacts_Removal.m' is the demo of MWCNN for JPEG image artifacts removal.
-
-The pretraining models can be download @ https://pan.baidu.com/s/1ZAgZ7FQvSmTp3U_ypFUG3A password：pz0h
 
 ## Requirements and Dependencies
 - MATLAB R2017a
