@@ -60,3 +60,9 @@ Download the pre-trained model with the following url and put it into ./models
 - [Cuda](https://developer.nvidia.com/cuda-toolkit-archive)-8.0 & [cuDNN](https://developer.nvidia.com/cudnn) v-5.1
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
 
+## Contact
+Please send email to lpj008@126.com
+
+
+
+
