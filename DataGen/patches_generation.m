@@ -6,6 +6,9 @@ ext               =  {'*.jpg','*.png','*.bmp','*.jpeg', '*.JPEG'};
 stride1 = 100;
 stride2 = 100;
 count_num = 0;
+data = [];
+labels = [];
+set = [];
 for fi = 1:numel(folder)
     filepaths           =  [];
     for i = 1 : length(ext)
@@ -47,6 +50,6 @@ for fi = 1:numel(folder)
         fprintf('Folder %d count %d\n', fi, count);
     end
 end
-quit;
+%quit;
 
 
