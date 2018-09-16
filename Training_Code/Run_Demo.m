@@ -4,10 +4,15 @@
 clear;
 rng('default')
 addpath(genpath('./.'));
+addpath(genpath('../.'));
+addpath(genpath('../DataGen'));
 addpath('matconvnet');
 vl_setupnn;
 
-
+%%%-------------------------------------------------------------------------
+%%% Data generation
+%%%-------------------------------------------------------------------------
+A_data_generation;
 
 %%%-------------------------------------------------------------------------
 %%% Configuration
