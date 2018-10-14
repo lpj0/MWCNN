@@ -65,10 +65,15 @@ Please send email to lpj008@126.com
 
 ## Citation
 @InProceedings{Liu_2018_CVPR_Workshops, 
+
 author = {Liu, Pengju and Zhang, Hongzhi and Zhang, Kai and Lin, Liang and Zuo, Wangmeng}, 
+
 title = {Multi-Level Wavelet-CNN for Image Restoration}, 
+
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},  
-month = {June},      
+
+month = {June}, 
+
 year = {2018}
 }
 
