@@ -80,7 +80,7 @@ for PC = quality_list % [ 10 20 30 40]
         if WF 
             path =  ['.\results\' image_set '_' modelName '_' num2str(PC)];
             if ~exist(path, 'dir'), mkdir(path) ; end
-            imwrite(output, fullfile(path, [modelName '-' num2str(epoch) '-' filePaths(i).name]));
+            imwrite(output, fullfile(path, [modelName '-' filePaths(i).name]));
         end
         
         PSNRs(i) = PSNRCur;
