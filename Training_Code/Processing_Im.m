@@ -10,7 +10,7 @@ function output1 = Processing_Im(im, net, gpu, out_idx)
     end
     net.eval({'input',input}) ;
     %%% output (single)
-    output1 = gather(squeeze(gather(net.vars(out_idx).value+2)/4));
+    output1 = gather(squeeze(gather(net.vars(out_idx).value)));
     output1 = im2uint8(output1);
 end
 
