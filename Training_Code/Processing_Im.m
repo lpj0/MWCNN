@@ -3,9 +3,9 @@ function output1 = Processing_Im(im, net, gpu, out_idx)
 %     net.params(48).value = net.params(68).value;
 %     net.params(68).value = tmp;
     
-    input = im2single(im(:,:,1));
+    input = im2single(im(:,:,1))*4-2;
     if gpu
-        input = gpuArray(input*4-2);
+        input = gpuArray(input);
 	%	input = gpuArray(input);
     end
     net.eval({'input',input}) ;
