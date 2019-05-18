@@ -45,6 +45,7 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
 
 Download the pre-trained model with the following url and put it into ./models
 - [BaiduNetDisk](https://pan.baidu.com/s/1ZAgZ7FQvSmTp3U_ypFUG3A) password：pz0h
+- [GoogleDrive](https://drive.google.com/drive/folders/1GX_NQfG1-QHdfgmV8Axl1ZjlDsHUEAUV?usp=sharing)
 
 ### Image denoising
 'Demo_Image_Denoising.m' is the demo of MWCNN for image denoising.
