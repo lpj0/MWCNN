@@ -572,8 +572,8 @@ inputs = data_augmentation(inputs, mode(1));
 labels = data_augmentation(labels, mode(1));
 
 
-inputs  = gpuArray(inputs)*4-2;
-labels= gpuArray(labels)*4-2;
+inputs  = gpuArray(single(inputs))*4-2;
+labels= gpuArray(single(labels))*4-2;
 
 
 inputs2 = {'input', inputs, 'label', labels} ;
