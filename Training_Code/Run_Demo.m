@@ -66,6 +66,7 @@ opts.learningRate     = [logspace(-3, -3, 15) logspace(-3.8, -4, 20) logspace(-4
 opts.sigma            = 50; 
 
 opts.modelName        = ['MWCNN_GDSigma' num2str(opts.sigma)]; %%% model name
+imdb.modelName        = opts.modelName;
 
 opts.expDir      = fullfile('data', opts.modelName);
 opts.batchSize        = 32*numel(opts.gpus);
