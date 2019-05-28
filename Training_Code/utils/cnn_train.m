@@ -543,6 +543,7 @@ fn = @(x,y,z) getDagNNBatch(x,y,z) ;
 function [inputs2] = getDagNNBatch(imdb, batch, sigma)
 % -------------------------------------------------------------------------
 patch_size = imdb.patch_size ;
+if ~exist('tmp', 'file') mkdir('tmp'); end
 global CurTask;
 labels  = zeros(patch_size, patch_size, 1, numel(batch));
 for ii = 1:numel(batch)
