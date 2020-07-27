@@ -44,7 +44,7 @@ Multi-level wavelet-CNN architecture. It consists two parts: the contracting and
 ## Test models
 
 Download the pre-trained model with the following url and put it into ./models
-- [BaiduNetDisk](https://pan.baidu.com/s/1ZAgZ7FQvSmTp3U_ypFUG3A) password：pz0h
+- [BaiduNetDisk](https://pan.baidu.com/s/1xV0NfzOD2IBQOeSbREkIqQ) password：cnmu
 - [GoogleDrive](https://drive.google.com/drive/folders/1GX_NQfG1-QHdfgmV8Axl1ZjlDsHUEAUV?usp=sharing)
 
 ### Image denoising
