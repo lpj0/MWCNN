@@ -166,6 +166,16 @@ net = add_bnorm(net, ['LIEVE' num2str(l1, '%02d') '_bn' num2str(ll3, '%02d')], {
 
 net.addLayer(['LIEVE' num2str(l1, '%02d') '_relu' num2str(ll3, '%02d')], dagnn.ReLU(), ['LIEVE' num2str(l1, '%02d') '_bn' num2str(ll3, '%02d')], ['LIEVE' num2str(l1, '%02d') '_r' num2str(ll3, '%02d')], {});
 
+ll3 = ll3+1;
+
+net = add_conv(net, ['LIEVE' num2str(l1, '%02d') '_layer' num2str(ll3, '%02d')], {['LIEVE' num2str(l1, '%02d') '_r' num2str(ll3-1, '%02d')], ['LIEVE' num2str(l1, '%02d') '_x' num2str(ll3, '%02d')]},...
+    {['LIEVE' num2str(l1, '%02d') '_layer' num2str(ll3, '%02d') 'f'],  ['LIEVE' num2str(l1, '%02d') '_layer' num2str(ll3, '%02d') 'b']}, [h_default w_default feature_map_size2 feature_map_size2], 1);
+
+net = add_bnorm(net, ['LIEVE' num2str(l1, '%02d') '_bn' num2str(ll3, '%02d')], {['LIEVE' num2str(l1, '%02d') '_x' num2str(ll3, '%02d')], ['LIEVE' num2str(l1, '%02d') '_bn' num2str(ll3, '%02d')]},...
+    {['LIEVE' num2str(l1, '%02d') '_mean' num2str(ll3, '%02d')], ['LIEVE' num2str(l1, '%02d') '_var' num2str(ll3, '%02d')], ['LIEVE' num2str(l1, '%02d') '_mom' num2str(ll3, '%02d')]}, feature_map_size2);   
+
+net.addLayer(['LIEVE' num2str(l1, '%02d') '_relu' num2str(ll3, '%02d')], dagnn.ReLU(), ['LIEVE' num2str(l1, '%02d') '_bn' num2str(ll3, '%02d')], ['LIEVE' num2str(l1, '%02d') '_r' num2str(ll3, '%02d')], {});
+
 
 % net.addLayer('SUM_S02', dagnn.Sum(), {'LIEVE03_sx', 'LIEVE03_r05'}, 'SUM_S02', {});
 
